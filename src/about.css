@@ -1,0 +1,190 @@
+.creator-story {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  padding-block: clamp(110px, 16vw, 215px) 80px;
+  background: linear-gradient(115deg, #4f393d 0%, #674c50 46%, #7b5561 100%);
+  color: #fff4e7;
+}
+.about-top-lace {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1920 / 289;
+  overflow: hidden;
+  pointer-events: none;
+}
+.about-top-lace img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 100%;
+  width: 15.052083%;
+  max-width: none;
+  height: auto;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+.story-materials,
+.story-cutouts {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.story-materials {
+  mix-blend-mode: multiply;
+}
+.story-materials img,
+.story-cutouts img {
+  position: absolute;
+  height: auto;
+  max-width: none;
+}
+.story-floral-paper {
+  top: 140px;
+  left: -90px;
+  width: clamp(300px, 42vw, 600px);
+  opacity: 0.3;
+  rotate: -8deg;
+}
+.story-pink-paper {
+  top: 38%;
+  right: -180px;
+  width: 430px;
+  opacity: 0.22;
+  rotate: 12deg;
+}
+.story-dreamer-paper {
+  bottom: -85px;
+  left: -160px;
+  width: 320px;
+  opacity: 0.2;
+}
+.story-blossoms {
+  top: 105px;
+  right: calc(-1 * clamp(85px, 12vw, 175px));
+  width: clamp(135px, 17vw, 245px);
+  rotate: 12deg;
+}
+.story-hibiscus {
+  bottom: 28%;
+  left: -100px;
+  width: 125px;
+  rotate: -18deg;
+}
+.story-butterfly {
+  bottom: 35px;
+  right: -30px;
+  width: 125px;
+  rotate: 18deg;
+}
+.story-painted-swirl {
+  bottom: 180px;
+  right: -100px;
+  width: 280px;
+  opacity: 0.3;
+}
+.creator-story :focus-visible {
+  outline-color: #fbe1ae;
+}
+.creator-story .editorial-label {
+  color: #fff4e7;
+}
+.story-heading {
+  position: relative;
+}
+.creator-story .story-heading h2 {
+  margin: 20px 0 0;
+  font: italic 900 clamp(50px, 8.8vw, 126px)/0.95 "Fraunces", Georgia, serif;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+  color: #ffc8e0;
+}
+.story-heading h2 em {
+  display: block;
+  font: inherit;
+}
+.story-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 56px;
+  margin-top: 44px;
+}
+.creator-story .about {
+  position: relative;
+  display: block;
+  min-width: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  border: 0;
+}
+.creator-story .about-copy {
+  padding: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  transform: none;
+}
+.creator-story .about-copy::before {
+  display: none;
+}
+.creator-story .about-subtitle {
+  margin: 16px 0 22px;
+  color: #ffc8e0;
+  font: italic 500 clamp(29px, 3vw, 40px)/1.1 var(--font-display);
+}
+.creator-story .about-intro {
+  max-width: none;
+  font: 400 15px/1.85 var(--font-sans);
+  color: inherit;
+}
+.about-strengths {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 28px 0 0;
+}
+.about-strengths > div {
+  border-top: 1px solid #b9949b;
+  padding-top: 12px;
+}
+.about-strengths dt {
+  font: 600 23px/1.1 var(--font-display);
+}
+.about-strengths dd {
+  margin: 7px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.creator-story .results-feature .handwritten {
+  color: #ffc8e0;
+}
+.creator-story #about,
+.creator-story #results {
+  scroll-margin-top: 90px;
+}
+@media (min-width: 600px) {
+  .story-heading h2 em {
+    display: inline;
+  }
+  .story-dreamer-paper {
+    width: 420px;
+  }
+}
+@media (min-width: 1100px) {
+  .story-columns {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 6%;
+    align-items: start;
+    margin-top: 56px;
+  }
+  .story-hibiscus {
+    left: -140px;
+    bottom: 85px;
+    width: 220px;
+  }
+}
