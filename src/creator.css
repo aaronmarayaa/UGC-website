@@ -1181,7 +1181,8 @@ body {
 .cover-results > span {
   font: 11px/1.5 var(--font-sans);
 }
-.cover-results:hover > span {
+.cover-results > span a:hover,
+.cover-results > span a:focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
 }

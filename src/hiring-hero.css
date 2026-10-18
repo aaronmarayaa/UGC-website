@@ -177,6 +177,14 @@
 .cover-results strong {
   font-size: 31px;
 }
+.cover-results .cover-instagram {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.cover-results .cover-instagram strong {
+  font-size: clamp(24px, 2.2vw, 32px);
+}
 .cover-results > span {
   font-size: 10px;
   max-width: 220px;

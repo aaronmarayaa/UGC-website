@@ -1,6 +1,8 @@
 export const creator = {
   name: "Marella Almazar",
   firstName: "Marella",
+  instagramHandle: "@bymarella",
+  instagramUrl: "https://www.instagram.com/bymarella/",
   email: "",
   biography:
     "Hi, I’m Marella! I’ve been a business owner for the past five years, gaining valuable experience in market research, marketing, data analysis and content creation. I’m now a full-time UGC creator based in Canada and a proud first-time mom. With my background in business and marketing, I’m passionate about creating authentic, engaging and relatable content that helps brands connect with their audience, build trust, expand their reach and turn video content into sales.",

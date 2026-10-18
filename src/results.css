@@ -74,6 +74,15 @@
 .creator-story .results-feature figcaption {
   color: inherit;
 }
+.instagram-link {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+.instagram-link:hover {
+  color: #fbe1ae;
+  text-decoration-thickness: 2px;
+}
 @media (min-width: 600px) {
   .results-feature {
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.91fr);

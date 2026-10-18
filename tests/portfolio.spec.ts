@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("Instagram results retain the supplied screenshot without repeated metrics", async ({ page }) => {
-  await page.locator(".cover-results").click();
+  await page.locator('.cover-results a[href="#results"]').click();
   await expect(page).toHaveURL(/#results$/);
   const results = page.locator("#results");
   await expect(results.locator(".results-screenshot figcaption")).toHaveText(

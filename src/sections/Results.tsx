@@ -44,7 +44,19 @@ export function Results() {
               loading="lazy"
             />
           </div>
-          <figcaption>From Marella's Instagram: @bymarella</figcaption>
+          <figcaption>
+            <span>
+              From Marella's Instagram:{" "}
+              <a
+                className="instagram-link"
+                href={creator.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {creator.instagramHandle}
+              </a>
+            </span>
+          </figcaption>
         </figure>
       </div>
     </div>

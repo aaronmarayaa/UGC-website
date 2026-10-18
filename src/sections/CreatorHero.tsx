@@ -61,14 +61,23 @@ export function Hero() {
           User-generated content, through {creator.firstName}'s lens.
         </p>
         <div className="cover-evidence">
-          <a className="cover-results" href="#results">
-            <strong>{instagramInsights[0].value}</strong>
+          <div className="cover-results">
+            <a
+              className="instagram-link cover-instagram"
+              href={creator.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>{creator.instagramHandle}</strong>
+            </a>
             <span>
-              Instagram views
-              <br />
-              {instagramInsights[1].value} interactions · See results ↗
+              <a href="#results">
+                Instagram views
+                <br />
+                {instagramInsights[1].value} interactions · See results ↗
+              </a>
             </span>
-          </a>
+          </div>
           <img
             className="cover-fabric-star"
             src="/images/scrapbook/fabric-star.png"
